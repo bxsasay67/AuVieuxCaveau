@@ -101,10 +101,9 @@
       <li><a href="#histoire" class="group relative text-sm uppercase tracking-[0.2em] text-parchment/80 hover:text-parchment">Histoire<span class="absolute -bottom-1 left-0 h-px w-full origin-right scale-x-0 bg-brass transition-transform duration-500 ease-expo group-hover:origin-left group-hover:scale-x-100"></span></a></li>
       <li><a href="#restaurant" class="group relative text-sm uppercase tracking-[0.2em] text-parchment/80 hover:text-parchment">Restaurant<span class="absolute -bottom-1 left-0 h-px w-full origin-right scale-x-0 bg-brass transition-transform duration-500 ease-expo group-hover:origin-left group-hover:scale-x-100"></span></a></li>
       <li><a href="#carte" class="group relative text-sm uppercase tracking-[0.2em] text-parchment/80 hover:text-parchment">La carte<span class="absolute -bottom-1 left-0 h-px w-full origin-right scale-x-0 bg-brass transition-transform duration-500 ease-expo group-hover:origin-left group-hover:scale-x-100"></span></a></li>
-      <li><a href="#commander" class="group relative text-sm uppercase tracking-[0.2em] text-parchment/80 hover:text-parchment">Commander<span class="absolute -bottom-1 left-0 h-px w-full origin-right scale-x-0 bg-brass transition-transform duration-500 ease-expo group-hover:origin-left group-hover:scale-x-100"></span></a></li>
       <li><a href="#avis" class="group relative text-sm uppercase tracking-[0.2em] text-parchment/80 hover:text-parchment">Avis<span class="absolute -bottom-1 left-0 h-px w-full origin-right scale-x-0 bg-brass transition-transform duration-500 ease-expo group-hover:origin-left group-hover:scale-x-100"></span></a></li>
     </ul>
-    <a href="tel:+41217282749" data-cursor="Appeler" class="rounded-full border border-brass/40 px-5 py-2 text-sm uppercase tracking-[0.2em] transition-colors hover:border-brass hover:bg-brass hover:text-ink">Réserver</a>
+    <a href="#reserver" data-cursor="Réserver" class="rounded-full border border-brass/40 px-5 py-2 text-sm uppercase tracking-[0.2em] transition-colors hover:border-brass hover:bg-brass hover:text-ink">Réserver</a>
   </nav>
 </header>
 
@@ -115,12 +114,12 @@
       <canvas id="gl" class="absolute inset-0 h-full w-full"></canvas>
       <div class="pointer-events-none absolute inset-0 z-10 flex flex-col justify-between px-4 pb-20 pt-20 md:px-8 md:pb-6 md:pt-16">
         <div id="wTop" class="font-display text-[23vw] font-black uppercase leading-[0.8] tracking-[-0.05em] text-parchment md:text-[14.5vw]"><span class="split inline-flex overflow-hidden pb-[0.04em] pt-[0.08em]" data-text="Saveurs"></span></div>
-        <div id="wBottom" class="self-end text-right font-display text-[21vw] italic leading-[0.8] tracking-[-0.03em] text-outline md:text-[13.5vw]"><span class="split inline-flex overflow-hidden pb-[0.04em] pt-[0.08em]" data-text="d’Antan" data-offset="7"></span></div>
+        <div id="wBottom" class="self-end text-right font-display text-[21vw] italic leading-[0.8] tracking-[-0.03em] text-outline md:text-[13.5vw]"><span class="split inline-flex overflow-hidden pb-[0.04em] pt-[0.08em]" data-text="de Pully" data-offset="7"></span></div>
       </div>
       <div id="heroMeta" class="pointer-events-none absolute inset-0 z-20">
         <div class="fade-in pointer-events-auto absolute bottom-6 left-4 max-w-[15rem] md:bottom-auto md:left-8 md:top-1/2 md:-translate-y-1/2" style="transition-delay:.6s">
           <p class="hidden text-sm leading-relaxed text-parchment/70 md:block">Cuisine suisse de tradition, Rue de la Gare 11 à Pully. Midi et soir, terrasse aux beaux jours.</p>
-          <a href="tel:+41217282749" data-cursor="Appeler" class="magnetic group relative mt-5 inline-flex items-center gap-3 overflow-hidden rounded-full bg-ember px-6 py-3 text-xs uppercase tracking-[0.25em] text-ink">
+          <a href="#reserver" data-cursor="Réserver" class="magnetic group relative mt-5 inline-flex items-center gap-3 overflow-hidden rounded-full bg-ember px-6 py-3 text-xs uppercase tracking-[0.25em] text-ink">
             <span class="relative z-10">Réserver une table</span><span class="relative z-10 transition-transform duration-500 group-hover:translate-x-1">→</span>
             <span class="absolute inset-0 translate-y-full bg-brass transition-transform duration-500 ease-expo group-hover:translate-y-0"></span>
           </a>
@@ -186,7 +185,7 @@
           </div>
         </div>
         <div class="mt-12 flex flex-wrap gap-4">
-          <a href="tel:+41217282749" data-cursor="Appeler" class="magnetic inline-block rounded-full bg-ember px-7 py-4 text-xs uppercase tracking-[0.25em] text-ink transition-colors hover:bg-brass">Réserver une table</a>
+          <a href="#reserver" data-cursor="Réserver" class="magnetic inline-block rounded-full bg-ember px-7 py-4 text-xs uppercase tracking-[0.25em] text-ink transition-colors hover:bg-brass">Réserver une table</a>
           <a href="https://www.google.com/maps/search/?api=1&query=Restaurant+Au+Vieux+Caveau+Rue+de+la+Gare+11+1009+Pully" target="_blank" rel="noreferrer" data-cursor="Y aller" class="magnetic inline-block rounded-full border border-brass/50 px-7 py-4 text-xs uppercase tracking-[0.25em] transition-colors hover:bg-parchment hover:text-ink">Itinéraire</a>
         </div>
       </div>
@@ -209,69 +208,82 @@
     </div>
   </section>
 
-  <!-- COMMANDER -->
-  <section id="commander" class="bg-staves relative px-5 py-28 md:px-10 md:py-40">
-    <p class="font-fell text-sm tracking-[0.35em] text-ember">À emporter</p>
-    <h2 class="mt-4 font-display text-[17vw] font-black uppercase leading-[0.82] tracking-[-0.05em] md:text-[9vw]">Commander</h2>
-    <p class="mt-6 max-w-lg text-parchment/70">Choisissez vos plats, indiquez l’heure de retrait : votre commande part directement par SMS au restaurant. Nous vous rappelons pour confirmer.</p>
+  <!-- RÉSERVER -->
+  <section id="reserver" class="bg-staves relative px-5 py-28 md:px-10 md:py-40">
+    <div class="grid gap-14 lg:grid-cols-[1fr_1.05fr] lg:gap-20">
+      <div class="lg:sticky lg:top-28 lg:self-start">
+        <p class="font-fell text-sm tracking-[0.35em] text-ember">Une table pour vous</p>
+        <h2 class="mt-4 font-display text-[17vw] font-black uppercase leading-[0.82] tracking-[-0.05em] md:text-[9vw]">Réserver</h2>
+        <p class="mt-6 max-w-md text-parchment/70">Choisissez la date, l’heure et le nombre de personnes : votre demande part par SMS au restaurant, et nous vous recontactons pour confirmer.</p>
+        <p class="mt-8 text-xs uppercase tracking-[0.25em] text-smoke">Vous préférez appeler ?</p>
+        <a href="tel:+41217282749" class="mt-1 inline-block font-display text-3xl hover:text-ember" data-cursor="Appeler">021 728 27 49</a>
+      </div>
 
-    <div class="mt-16 grid gap-12 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
-      <div id="orderDishes" class="space-y-12"></div>
-
-      <aside class="lg:sticky lg:top-24 lg:self-start">
-        <div class="border border-brass/25 bg-ink/60 p-6 backdrop-blur-sm md:p-8">
-          <h3 class="font-display text-3xl italic">Votre commande</h3>
-          <ul id="orderRecap" class="mt-5 divide-y divide-brass/10 text-sm"></ul>
-          <p id="orderEmpty" class="mt-5 font-display text-xl italic text-smoke">Aucun plat pour l’instant.</p>
-
-          <form id="orderForm" class="mt-8 space-y-5" novalidate>
-            <label class="block">
-              <span class="text-xs uppercase tracking-[0.25em] text-smoke">Nom *</span>
-              <input name="nom" required autocomplete="name" class="mt-1 w-full border-b border-brass/40 bg-transparent py-2 text-lg outline-none focus:border-ember" />
-            </label>
-            <label class="block">
-              <span class="text-xs uppercase tracking-[0.25em] text-smoke">Téléphone *</span>
-              <input name="tel" type="tel" required autocomplete="tel" placeholder="079 123 45 67" class="mt-1 w-full border-b border-brass/40 bg-transparent py-2 text-lg outline-none placeholder:text-smoke/50 focus:border-ember" />
-            </label>
-            <div class="grid grid-cols-2 gap-4">
-              <label class="block">
-                <span class="text-xs uppercase tracking-[0.25em] text-smoke">Jour</span>
-                <select name="jour" class="mt-1 w-full border-b border-brass/40 bg-transparent py-2 text-lg outline-none focus:border-ember">
-                  <option class="bg-ink" value="Aujourd’hui">Aujourd’hui</option>
-                  <option class="bg-ink" value="Demain">Demain</option>
-                </select>
-              </label>
-              <label class="block">
-                <span class="text-xs uppercase tracking-[0.25em] text-smoke">Heure *</span>
-                <input name="heure" type="time" required class="mt-1 w-full border-b border-brass/40 bg-transparent py-2 text-lg outline-none [color-scheme:dark] focus:border-ember" />
-              </label>
-            </div>
-            <label class="block">
-              <span class="text-xs uppercase tracking-[0.25em] text-smoke">Remarque</span>
-              <textarea name="remarque" rows="2" placeholder="Allergies, cuisson…" class="mt-1 w-full resize-none border-b border-brass/40 bg-transparent py-2 outline-none placeholder:text-smoke/50 focus:border-ember"></textarea>
-            </label>
-
-            <p id="orderError" class="hidden text-sm text-ember"></p>
-
-            <button type="submit" data-cursor="SMS" class="group relative w-full overflow-hidden rounded-full bg-ember py-4 text-xs uppercase tracking-[0.25em] text-ink">
-              <span class="relative z-10">Envoyer la commande par SMS</span>
-              <span class="absolute inset-0 translate-y-full bg-brass transition-transform duration-500 ease-expo group-hover:translate-y-0"></span>
-            </button>
-          </form>
-
-          <!-- Après l'envoi / sur ordinateur -->
-          <div id="orderDone" class="mt-6 hidden">
-            <p id="orderDoneTitle" class="font-display text-2xl italic text-ember"></p>
-            <p id="orderDoneText" class="mt-2 text-sm text-parchment/70"></p>
-            <pre id="orderText" class="mt-4 hidden whitespace-pre-wrap border border-brass/20 p-4 font-sans text-sm text-parchment/85"></pre>
-            <div class="mt-4 flex flex-wrap gap-3">
-              <button id="orderCopy" class="hidden rounded-full border border-brass/50 px-5 py-2 text-xs uppercase tracking-[0.2em] hover:bg-parchment hover:text-ink">Copier le message</button>
-              <button id="orderNew" class="rounded-full border border-brass/50 px-5 py-2 text-xs uppercase tracking-[0.2em] hover:bg-parchment hover:text-ink">Nouvelle commande</button>
+      <div class="border border-brass/25 bg-ink/60 p-6 backdrop-blur-sm md:p-10">
+        <form id="resaForm" class="space-y-7" novalidate>
+          <div>
+            <span class="text-xs uppercase tracking-[0.25em] text-smoke">Nombre de personnes *</span>
+            <div class="mt-3 flex items-center gap-5">
+              <button type="button" id="pMinus" aria-label="Moins" class="h-11 w-11 rounded-full border border-brass/40 text-xl transition-colors hover:bg-brass hover:text-ink">−</button>
+              <span id="pCount" class="w-12 text-center font-display text-5xl tabular-nums">2</span>
+              <button type="button" id="pPlus" aria-label="Plus" class="h-11 w-11 rounded-full border border-brass/40 text-xl transition-colors hover:border-ember hover:bg-ember hover:text-ink">+</button>
+              <span class="text-sm text-smoke">personnes</span>
             </div>
           </div>
+
+          <div class="grid grid-cols-2 gap-5">
+            <label class="block">
+              <span class="text-xs uppercase tracking-[0.25em] text-smoke">Date *</span>
+              <input name="date" type="date" required class="mt-1 w-full border-b border-brass/40 bg-transparent py-2 text-lg outline-none [color-scheme:dark] focus:border-ember" />
+            </label>
+            <label class="block">
+              <span class="text-xs uppercase tracking-[0.25em] text-smoke">Heure *</span>
+              <input name="heure" type="time" required step="900" class="mt-1 w-full border-b border-brass/40 bg-transparent py-2 text-lg outline-none [color-scheme:dark] focus:border-ember" />
+            </label>
+          </div>
+          <p id="resaHours" class="-mt-4 text-xs text-smoke"></p>
+
+          <div>
+            <span class="text-xs uppercase tracking-[0.25em] text-smoke">Placement</span>
+            <div id="placeChoice" class="mt-3 flex flex-wrap gap-2">
+              <button type="button" data-place="Peu importe" class="place rounded-full border px-4 py-2 text-xs uppercase tracking-[0.18em] transition-colors">Peu importe</button>
+              <button type="button" data-place="Intérieur" class="place rounded-full border px-4 py-2 text-xs uppercase tracking-[0.18em] transition-colors">Intérieur</button>
+              <button type="button" data-place="Terrasse" class="place rounded-full border px-4 py-2 text-xs uppercase tracking-[0.18em] transition-colors">Terrasse</button>
+            </div>
+          </div>
+
+          <label class="block">
+            <span class="text-xs uppercase tracking-[0.25em] text-smoke">Nom *</span>
+            <input name="nom" required autocomplete="name" class="mt-1 w-full border-b border-brass/40 bg-transparent py-2 text-lg outline-none focus:border-ember" />
+          </label>
+          <label class="block">
+            <span class="text-xs uppercase tracking-[0.25em] text-smoke">Téléphone *</span>
+            <input name="tel" type="tel" required autocomplete="tel" placeholder="079 123 45 67" class="mt-1 w-full border-b border-brass/40 bg-transparent py-2 text-lg outline-none placeholder:text-smoke/50 focus:border-ember" />
+          </label>
+          <label class="block">
+            <span class="text-xs uppercase tracking-[0.25em] text-smoke">Remarque</span>
+            <textarea name="remarque" rows="2" placeholder="Anniversaire, chaise bébé, chien, allergies…" class="mt-1 w-full resize-none border-b border-brass/40 bg-transparent py-2 outline-none placeholder:text-smoke/50 focus:border-ember"></textarea>
+          </label>
+
+          <p id="resaError" class="hidden text-sm text-ember"></p>
+
+          <button type="submit" data-cursor="SMS" class="group relative w-full overflow-hidden rounded-full bg-ember py-4 text-xs uppercase tracking-[0.25em] text-ink">
+            <span class="relative z-10">Envoyer la demande par SMS</span>
+            <span class="absolute inset-0 translate-y-full bg-brass transition-transform duration-500 ease-expo group-hover:translate-y-0"></span>
+          </button>
+          <p class="text-xs leading-relaxed text-smoke">Votre application Messages s’ouvre avec la demande déjà rédigée : il suffit d’appuyer sur Envoyer. La réservation est confirmée quand le restaurant vous a recontacté.</p>
+        </form>
+
+        <div id="resaDone" class="hidden">
+          <p id="resaDoneTitle" class="font-display text-3xl italic text-ember"></p>
+          <p id="resaDoneText" class="mt-3 text-parchment/70"></p>
+          <pre id="resaText" class="mt-5 hidden whitespace-pre-wrap border border-brass/20 p-4 font-sans text-sm text-parchment/85"></pre>
+          <div class="mt-5 flex flex-wrap gap-3">
+            <button id="resaCopy" class="hidden rounded-full border border-brass/50 px-5 py-2 text-xs uppercase tracking-[0.2em] hover:bg-parchment hover:text-ink">Copier le message</button>
+            <button id="resaNew" class="rounded-full border border-brass/50 px-5 py-2 text-xs uppercase tracking-[0.2em] hover:bg-parchment hover:text-ink">Nouvelle demande</button>
+          </div>
         </div>
-        <p class="mt-4 text-xs leading-relaxed text-smoke">La commande s’ouvre dans votre application Messages, déjà rédigée : il suffit d’appuyer sur Envoyer. Vous préférez appeler ? <a href="tel:+41217282749" class="underline hover:text-ember">021 728 27 49</a></p>
-      </aside>
+      </div>
     </div>
   </section>
 
@@ -312,7 +324,7 @@
         <li><a href="#histoire" class="group inline-flex items-center gap-2 hover:text-ember"><span class="h-px w-0 bg-ember transition-all duration-500 group-hover:w-6"></span>Histoire</a></li>
         <li><a href="#restaurant" class="group inline-flex items-center gap-2 hover:text-ember"><span class="h-px w-0 bg-ember transition-all duration-500 group-hover:w-6"></span>Restaurant</a></li>
         <li><a href="#carte" class="group inline-flex items-center gap-2 hover:text-ember"><span class="h-px w-0 bg-ember transition-all duration-500 group-hover:w-6"></span>La carte</a></li>
-        <li><a href="#commander" class="group inline-flex items-center gap-2 hover:text-ember"><span class="h-px w-0 bg-ember transition-all duration-500 group-hover:w-6"></span>Commander</a></li>
+        <li><a href="#reserver" class="group inline-flex items-center gap-2 hover:text-ember"><span class="h-px w-0 bg-ember transition-all duration-500 group-hover:w-6"></span>Réserver</a></li>
         <li><a href="#avis" class="group inline-flex items-center gap-2 hover:text-ember"><span class="h-px w-0 bg-ember transition-all duration-500 group-hover:w-6"></span>Avis</a></li>
       </ul>
     </div>
@@ -424,108 +436,107 @@ function selectTab(i) {
 document.fonts.ready.then(() => selectTab(1)); selectTab(1)
 addEventListener('resize', () => { const a = [...tabs.querySelectorAll('button')].findIndex(b => b.classList.contains('text-parchment')); if (a >= 0) { const b = tabs.querySelectorAll('button')[a]; line.style.left = b.offsetLeft + 'px'; line.style.width = b.offsetWidth + 'px' } })
 
-// ───────── Commander ─────────
-// ⚠️ À REMPLACER : numéro de PORTABLE qui reçoit les commandes (format international, sans espaces).
-// Le 021 728 27 49 est une ligne fixe : il ne peut pas recevoir de SMS.
+// ───────── Réserver ─────────
+// Portable qui reçoit les demandes de réservation (format international)
 const NUMERO_SMS = '+41764277325'
+const NUMERO_SMS_AFFICHE = '076 427 73 25'
 
-const order = {}
-const orderDishes = document.getElementById('orderDishes')
-orderDishes.innerHTML = menu.map(([cat, items]) => `
-  <div>
-    <h3 class="border-b border-brass/20 pb-3 font-display text-3xl italic">${cat}</h3>
-    <ul>${items.map(([n, d]) => `
-      <li class="flex items-center gap-4 border-b border-brass/10 py-4">
-        <div class="flex-1">
-          <p class="font-display text-xl md:text-2xl">${n}</p>
-          <p class="text-sm text-parchment/55">${d}</p>
-        </div>
-        <div class="flex shrink-0 items-center gap-3">
-          <button type="button" aria-label="Retirer ${n}" data-dish="${n}" data-d="-1" class="qbtn h-9 w-9 rounded-full border border-brass/40 transition-colors hover:bg-brass hover:text-ink">−</button>
-          <span class="qty w-5 text-center font-display text-xl tabular-nums" data-qty="${n}">0</span>
-          <button type="button" aria-label="Ajouter ${n}" data-dish="${n}" data-d="1" class="qbtn h-9 w-9 rounded-full border border-brass/40 transition-colors hover:border-ember hover:bg-ember hover:text-ink">+</button>
-        </div>
-      </li>`).join('')}
-    </ul>
-  </div>`).join('')
-
-function renderOrder() {
-  document.querySelectorAll('[data-qty]').forEach(el => {
-    const q = order[el.dataset.qty] || 0
-    el.textContent = q
-    el.classList.toggle('text-ember', q > 0)
-  })
-  const lines = Object.entries(order).filter(([, q]) => q > 0)
-  document.getElementById('orderEmpty').classList.toggle('hidden', lines.length > 0)
-  document.getElementById('orderRecap').innerHTML = lines.map(([n, q]) =>
-    `<li class="flex justify-between gap-4 py-2"><span>${n}</span><span class="font-display text-lg tabular-nums text-ember">× ${q}</span></li>`).join('')
+const resaForm = document.getElementById('resaForm'), resaErr = document.getElementById('resaError')
+let people = 2, place = 'Peu importe'
+const pCount = document.getElementById('pCount')
+function setPeople(n) {
+  people = Math.max(1, Math.min(30, n)); pCount.textContent = people
+  pCount.animate([{ transform: 'scale(1.3)' }, { transform: 'scale(1)' }], { duration: 300, easing: 'cubic-bezier(.16,1,.3,1)' })
 }
-orderDishes.addEventListener('click', e => {
-  const b = e.target.closest('.qbtn'); if (!b) return
-  const n = b.dataset.dish
-  order[n] = Math.max(0, Math.min(20, (order[n] || 0) + +b.dataset.d))
-  if (!order[n]) delete order[n]
-  renderOrder()
-  const q = document.querySelector(`[data-qty="${CSS.escape(n)}"]`)
-  q.animate([{ transform: 'scale(1.5)' }, { transform: 'scale(1)' }], { duration: 300, easing: 'cubic-bezier(.16,1,.3,1)' })
-})
-renderOrder()
+document.getElementById('pMinus').onclick = () => setPeople(people - 1)
+document.getElementById('pPlus').onclick = () => setPeople(people + 1)
 
-const form = document.getElementById('orderForm'), err = document.getElementById('orderError')
-function showError(msg) { err.textContent = msg; err.classList.remove('hidden') }
+function renderPlace() {
+  document.querySelectorAll('.place').forEach(b => {
+    const on = b.dataset.place === place
+    b.classList.toggle('bg-ember', on); b.classList.toggle('text-ink', on); b.classList.toggle('border-ember', on)
+    b.classList.toggle('border-brass/40', !on)
+  })
+}
+document.getElementById('placeChoice').addEventListener('click', e => { const b = e.target.closest('.place'); if (b) { place = b.dataset.place; renderPlace() } })
+renderPlace()
 
-form.addEventListener('submit', e => {
+// Date : à partir d'aujourd'hui (heure suisse), 3 mois max
+const ymd = d => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Zurich' }).format(d)
+const dateInput = resaForm.elements.date
+dateInput.min = ymd(new Date())
+dateInput.max = ymd(new Date(Date.now() + 92 * 864e5))
+dateInput.value = dateInput.min
+
+const parseDate = v => { const [y, m, d] = v.split('-').map(Number); return new Date(y, m - 1, d, 12) }
+const dayOf = v => new Intl.DateTimeFormat('fr-CH', { weekday: 'long' }).format(parseDate(v))
+const slotsOf = v => (hours.find(h => h[0] === dayOf(v)) || [null, []])[1]
+function showHours() {
+  const v = dateInput.value
+  document.getElementById('resaHours').textContent = v ? `Ouvert le ${dayOf(v)} : ${slotsOf(v).map(s => s.join('–')).join(' · ')}` : ''
+}
+dateInput.addEventListener('change', showHours); showHours()
+
+function resaError(msg) { resaErr.textContent = msg; resaErr.classList.remove('hidden') }
+
+resaForm.addEventListener('submit', e => {
   e.preventDefault()
-  err.classList.add('hidden')
-  const f = new FormData(form)
-  const nom = (f.get('nom') || '').trim(), tel = (f.get('tel') || '').trim(), heure = f.get('heure'), jour = f.get('jour'), rem = (f.get('remarque') || '').trim()
-  const lines = Object.entries(order).filter(([, q]) => q > 0)
-  if (!lines.length) return showError('Ajoutez au moins un plat.')
-  if (!nom) return showError('Indiquez votre nom.')
-  if (tel.replace(/\D/g, '').length < 9) return showError('Indiquez un numéro de téléphone valide.')
-  if (!heure) return showError('Choisissez une heure de retrait.')
+  resaErr.classList.add('hidden')
+  const f = new FormData(resaForm)
+  const date = f.get('date'), heure = f.get('heure')
+  const nom = (f.get('nom') || '').trim(), tel = (f.get('tel') || '').trim(), rem = (f.get('remarque') || '').trim()
 
-  // Vérifie que l'heure tombe pendant les heures d'ouverture
-  const d = new Date(); if (jour === 'Demain') d.setDate(d.getDate() + 1)
-  const dayName = new Intl.DateTimeFormat('fr-CH', { weekday: 'long', timeZone: 'Europe/Zurich' }).format(d)
-  const slots = (hours.find(h => h[0] === dayName) || [null, []])[1]
-  if (!slots.some(([a, b]) => toMin(heure) >= toMin(a) && toMin(heure) <= toMin(b) - 15))
-    return showError(`Le restaurant n’est pas ouvert à cette heure-là (${dayName} : ${slots.map(s => s.join('–')).join(' · ') || 'fermé'}).`)
+  if (!date) return resaError('Choisissez une date.')
+  if (date < dateInput.min) return resaError('Cette date est déjà passée.')
+  if (!heure) return resaError('Choisissez une heure.')
+  const slots = slotsOf(date)
+  if (!slots.some(([a, b]) => toMin(heure) >= toMin(a) && toMin(heure) <= toMin(b) - 30))
+    return resaError(`Le restaurant n’accueille pas de table à cette heure-là le ${dayOf(date)} (${slots.map(s => s.join('–')).join(' · ')}).`)
+  if (date === dateInput.min) {
+    const now = toMin(new Intl.DateTimeFormat('fr-CH', { hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Zurich' }).format(new Date()))
+    if (toMin(heure) < now + 30) return resaError('Pour une table dans moins de 30 minutes, appelez directement le 021 728 27 49.')
+  }
+  if (!nom) return resaError('Indiquez votre nom.')
+  if (tel.replace(/\D/g, '').length < 9) return resaError('Indiquez un numéro de téléphone valide.')
 
+  const dateLong = new Intl.DateTimeFormat('fr-CH', { weekday: 'long', day: 'numeric', month: 'long' }).format(parseDate(date))
   const body = [
-    'NOUVELLE COMMANDE – site web',
+    'DEMANDE DE RÉSERVATION – site web',
     '',
-    ...lines.map(([n, q]) => `${q}× ${n}`),
+    `Date : ${dateLong}`,
+    `Heure : ${heure}`,
+    `Personnes : ${people}`,
+    `Placement : ${place}`,
     '',
     `Nom : ${nom}`,
     `Tél : ${tel}`,
-    `Retrait : ${jour} (${dayName}) à ${heure}`,
     rem ? `Remarque : ${rem}` : null,
   ].filter(l => l !== null).join('\n')
 
-  const done = document.getElementById('orderDone'), title = document.getElementById('orderDoneTitle'), text = document.getElementById('orderDoneText')
-  const pre = document.getElementById('orderText'), copy = document.getElementById('orderCopy')
+  const done = document.getElementById('resaDone'), title = document.getElementById('resaDoneTitle'), text = document.getElementById('resaDoneText')
+  const pre = document.getElementById('resaText'), copy = document.getElementById('resaCopy')
   const mobile = matchMedia('(pointer: coarse)').matches || /Android|iPhone|iPad/i.test(navigator.userAgent)
 
-  form.classList.add('hidden'); done.classList.remove('hidden')
+  resaForm.classList.add('hidden'); done.classList.remove('hidden')
   if (mobile) {
     title.textContent = 'Votre application Messages s’ouvre…'
-    text.textContent = 'Appuyez sur « Envoyer » pour transmettre la commande au restaurant. Nous vous rappelons pour confirmer.'
+    text.textContent = 'Appuyez sur « Envoyer » pour transmettre votre demande. Le restaurant vous recontacte pour confirmer la table.'
     location.href = `sms:${NUMERO_SMS}?&body=${encodeURIComponent(body)}`
   } else {
     title.textContent = 'Presque fini !'
-    text.textContent = `Sur ordinateur, l’envoi de SMS n’est pas possible. Envoyez ce message depuis votre téléphone au 076 427 73 25, ou ouvrez ce site sur votre téléphone.`
+    text.textContent = `Sur ordinateur, l’envoi de SMS n’est pas possible. Envoyez ce message depuis votre téléphone au ${NUMERO_SMS_AFFICHE}, ou appelez le 021 728 27 49.`
     pre.textContent = body; pre.classList.remove('hidden'); copy.classList.remove('hidden')
     copy.onclick = () => navigator.clipboard.writeText(body).then(() => copy.textContent = 'Copié ✓')
   }
 })
 
-document.getElementById('orderNew').addEventListener('click', () => {
-  Object.keys(order).forEach(k => delete order[k]); renderOrder()
-  form.reset(); form.classList.remove('hidden')
-  document.getElementById('orderDone').classList.add('hidden')
-  document.getElementById('orderText').classList.add('hidden')
-  const c = document.getElementById('orderCopy'); c.classList.add('hidden'); c.textContent = 'Copier le message'
+document.getElementById('resaNew').addEventListener('click', () => {
+  resaForm.reset(); dateInput.value = dateInput.min; showHours()
+  setPeople(2); place = 'Peu importe'; renderPlace()
+  resaForm.classList.remove('hidden')
+  document.getElementById('resaDone').classList.add('hidden')
+  document.getElementById('resaText').classList.add('hidden')
+  const c = document.getElementById('resaCopy'); c.classList.add('hidden'); c.textContent = 'Copier le message'
 })
 
 // Avis
